@@ -51,7 +51,9 @@ So, we can see that out shells contains bash, and path to the executable is */bi
 Scripts should be named with the extension that is used for the specific shell that you are using. In the case of the scripts that I'm writing they should work for multiple shells. The convention, however, is to write the extension of the shell script with the extension that the script is supposed to be executed with. For example:
 
 `greeting.sh`  # sh shell script
+
 `greeting.bash` # bash shell script
+
 `greeting.ksh` # ksh shell script
 
 ... and so on. I'm undecided if I shall use purely `.bash` in these examples, as they should, as I already mentioned, work for multiple shells (it'slikely that I shall use the .sh extension in all the cases, but lets see how I feel).
