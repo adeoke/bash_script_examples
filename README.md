@@ -57,14 +57,15 @@ Scripts should be named with the extension that is used for the specific shell t
 
 `greeting.ksh` # ksh shell script
 
-... and so on. I'm undecided if I shall use purely `.bash` in these examples, as they should, as I already mentioned, work for multiple shells (it'slikely that I shall use the .sh extension in all the cases, but lets see how I feel).
+... and so on.
+In my case I will exclude the file extension from all the scripts as the file itself will indicate the type of shell to use. 
 
 # Basic information
 
 ## A note on the first line in each script file
 
 Each script file has an opening `#!`, which is commonly referred to as `shebang`.
-This line needs to be the file line in the script file and it informs the running application (terminal) to use the path to the bash application to run the contents of the file (`#!/bin/bash`), where /bin/bash is the path to the bash applicaiton on your host machine.
+This line needs to be the file line in the script file and it informs the running application (terminal) to use the path to the bash application to run the contents of the file (`#!/bin/bash`), where /bin/bash is the path to the bash application on your host machine.
 
 ## A note on file permissions
 
