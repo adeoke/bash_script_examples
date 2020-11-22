@@ -58,7 +58,7 @@ Scripts should be named with the extension that is used for the specific shell t
 `greeting.ksh` # ksh shell script
 
 ... and so on.
-In my case I will exclude the file extension from all the scripts as the file itself will indicate the type of shell to use. 
+In my case I will exclude the file extension from all the scripts as the file itself will indicate the type of shell to use.
 
 # Basic information
 
@@ -100,3 +100,13 @@ In order to make the file runnable we need to change the permissions for the ite
 A simple way to do this is with the chmod command.
 
 In the terminal if you input `chmod a+x particular_file.sh` (replacing particular_file.sh with your desired file) then you will enable execute permission for the file for the the current user, the group that user belongs to and all other users as well. At this point you are ready to get started with running the script.
+
+## Running a particular script file
+
+I like to run my scripts from the project root. For that reason I indicate a `.` to show that the file is relative to the current directory. So, in order to run the greeting script from the scripts directory, while within the project root we do the following from the command line:
+
+```console
+$ ./scripts/greeting
+```
+
+Which will execute the greeting file, relative to the current working directory.
