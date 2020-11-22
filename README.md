@@ -84,7 +84,8 @@ The next three chars represent the current users permissions for the particular 
 The next three chars after that represents the items group permissions
 `r--`, which in this case is read only.
 
-Finally, the last three characters after that represents all other users permissions, again in this case is `r--`, and so again only read  permissions for `all other` users.
+Finally, the last three characters after that represents all other users permissions, again in this case is
+`r--`, and so again only read  permissions for `all other` users.
 
 
 In order to make the file runnable we need to change the permissions for the item.
