@@ -91,4 +91,4 @@ Finally, the last three characters after that represents all other users permiss
 In order to make the file runnable we need to change the permissions for the item.
 A simple way to do this is with the chmod command.
 
-in the terminal if you input `chmod a+x particular_file.sh` (replacing particular_file.sh with your desired file) then you will enable execute permission for the file for the the current user, the group that user belongs to and all other users as well. At this point you are ready to get started with running the script.
+In the terminal if you input `chmod a+x particular_file.sh` (replacing particular_file.sh with your desired file) then you will enable execute permission for the file for the the current user, the group that user belongs to and all other users as well. At this point you are ready to get started with running the script.
