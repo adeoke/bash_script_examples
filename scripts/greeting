@@ -3,6 +3,7 @@
 # Purpose: Greeting script example
 # Date: 22nd November 2020
 # Modification: 22nd November 2020
-# Comment: Lines 3-6 will not be output as they are comments.
+# Description: This script will output 'Greetings fella!' to the console.
+# Comment: Lines 3-7 will not be output as they are comments.
 
 echo "Greetings fella!"
