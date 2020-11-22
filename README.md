@@ -66,7 +66,7 @@ Scripts should be named with the extension that is used for the specific shell t
 Each script file has an opening `#!`, which is commonly referred to as `shebang`.
 This line needs to be the file line in the script file and it informs the running application (terminal) to use the path to the bash application to run the contents of the file (`#!/bin/bash`), where /bin/bash is the path to the bash applicaiton on your host machine.
 
-# A note on file permissions
+## A note on file permissions
 
 By default scripts are not executable. Users and groups in the operating system should be enabled to read the scrips by default. However, they wont be able to execute them, and executing scripts is our goal.
 
