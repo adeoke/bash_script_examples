@@ -1,4 +1,5 @@
 # Bash Script Examples
+
 This is a project to demonstrate how to use bash with common commands, problems and solutions.
 
 # Motivation
@@ -57,3 +58,29 @@ Scripts should be named with the extension that is used for the specific shell t
 `greeting.ksh` # ksh shell script
 
 ... and so on. I'm undecided if I shall use purely `.bash` in these examples, as they should, as I already mentioned, work for multiple shells (it'slikely that I shall use the .sh extension in all the cases, but lets see how I feel).
+
+# Basic information
+
+By default scripts are not executable. Users and groups in the operating system should be enabled to read the scrips by default. However, they wont be able to execute them, and executing scripts is our goal.
+
+You can check the permissions of each script by changing into the directory and listing all the files and then examining the permission for each file. For example, lets examine the permissions of the README.md file in this directory:
+
+```console
+$ ls -al
+
+drwxr-xr-x    5 myusername  staff   160 22 Nov 18:53 .
+drwx------+ 223 myusername  staff  7136 22 Nov 18:53 ..
+drwxr-xr-x   13 myusername  staff   416 22 Nov 19:28 .git
+-rw-r--r--    1 myusername  staff  1064 22 Nov 18:53 LICENSE
+-rw-r--r--    1 myusername  staff  2077 22 Nov 19:29 README.md
+```
+
+In this case we can see the `README.md` permissions are `-rw-r--r--`.
+
+The first hyphen is used to indicate if the item is a file or a directory, `d` indicates a directory (in the above output we can see that `.git` is a directory), but for README.md it has a hyphen, which means it's NOT a directory.
+
+The next three chars represent the current users permissions for the particular item: `rw-`, which means the user can read and write the file only.
+
+The next three chars after that represents the items group permissions `r--`, which in this case is read only.
+
+Finally, the last three characters after that represents all other users permissions, again in this case is `r--`, and so again only read  permissions for `all other` users.
