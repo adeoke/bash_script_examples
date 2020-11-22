@@ -81,6 +81,13 @@ The first hyphen is used to indicate if the item is a file or a directory, `d` i
 
 The next three chars represent the current users permissions for the particular item: `rw-`, which means the user can read and write the file only.
 
-The next three chars after that represents the items group permissions `r--`, which in this case is read only.
+The next three chars after that represents the items group permissions
+`r--`, which in this case is read only.
 
 Finally, the last three characters after that represents all other users permissions, again in this case is `r--`, and so again only read  permissions for `all other` users.
+
+
+In order to make the file runnable we need to change the permissions for the item.
+A simple way to do this is with the chmod command.
+
+in the terminal if you input `chmod a+x particular_file.sh` (replacing particular_file.sh with your desired file) then you will enable execute permission for the file for the the current user, the group that user belongs to and all other users as well. At this point you are ready to get started with running the script.
