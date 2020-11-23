@@ -1,5 +1,7 @@
 # Bash Script Examples
 
+![Bash](/images/bash.png)
+
 This is a project to demonstrate how to use bash with common commands, problems and solutions.
 
 # Motivation
